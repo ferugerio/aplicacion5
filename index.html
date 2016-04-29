@@ -1,0 +1,335 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Primera Aplicacion</title>
+
+<!--grupo CSS-->
+<link rel="stylesheet" href="css/tema5.min.css"/>
+<link rel="stylesheet" href="css/jquery.mobile.icons-1.4.5.min.css"/>
+<link rel="stylesheet" href="css/jquery.mobile.structure-1.4.5.min.css"/>
+<style type="text/css">
+#Principal div .ui-listview.ui-group-theme-a .ui-first-child.ui-last-child .ui-btn.ui-btn-icon-right.ui-icon-carat-r h2 {
+	font-family: sans-serif;
+}
+#Pagina4 div div div div h2 {
+	text-align: center;
+	font-family: sans-serif;
+}
+</style>
+<!--grupo JavaScript-->
+<script src="js/jquery-1.11.2.min.js"></script>
+<script src="js/jquery.mobile-1.4.5.min.js"></script>
+<script src="js/acciones.js"></script>
+<script src="phonegap.js" type="text/Javascript"></script>
+<script type="text/javascript">
+function MM_swapImgRestore() { //v3.0
+  var i,x,a=document.MM_sr; for(i=0;a&&i<a.length&&(x=a[i])&&x.oSrc;i++) x.src=x.oSrc;
+}
+function MM_preloadImages() { //v3.0
+  var d=document; if(d.images){ if(!d.MM_p) d.MM_p=new Array();
+    var i,j=d.MM_p.length,a=MM_preloadImages.arguments; for(i=0; i<a.length; i++)
+    if (a[i].indexOf("#")!=0){ d.MM_p[j]=new Image; d.MM_p[j++].src=a[i];}}
+}
+
+function MM_findObj(n, d) { //v4.01
+  var p,i,x;  if(!d) d=document; if((p=n.indexOf("?"))>0&&parent.frames.length) {
+    d=parent.frames[n.substring(p+1)].document; n=n.substring(0,p);}
+  if(!(x=d[n])&&d.all) x=d.all[n]; for (i=0;!x&&i<d.forms.length;i++) x=d.forms[i][n];
+  for(i=0;!x&&d.layers&&i<d.layers.length;i++) x=MM_findObj(n,d.layers[i].document);
+  if(!x && d.getElementById) x=d.getElementById(n); return x;
+}
+
+function MM_swapImage() { //v3.0
+  var i,j=0,x,a=MM_swapImage.arguments; document.MM_sr=new Array; for(i=0;i<(a.length-2);i+=3)
+   if ((x=MM_findObj(a[i]))!=null){document.MM_sr[j++]=x; if(!x.oSrc) x.oSrc=x.src; x.src=a[i+2];}
+}
+</script>
+</head>
+
+<body onLoad="MM_preloadImages('imagenes/planeta11.png','imagenes/planeta10.png','imagenes/planeta7.png','imagenes/r.png','imagenes/1280.png','imagenes/planeta3.png')">
+<div data-role="page" id="Principal" data-theme="a">
+<div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="a">
+<h1>Dia de la Tierra</h1>
+</div>
+<div data-role="main" class="ui-content">
+<!-- Start WOWSlider.com -->
+<iframe src="visor/indexvisor.html" style="width:95%;height:56%;max-width:100%;overflow:hidden;border:none;padding:0;margin:0 auto;display:block;" marginheight="0" marginwidth="0"></iframe>
+<!-- End WOWSlider.com -->
+</div>
+
+<div>
+<ul data-role="listview" data-theme="a" class="ui-listview ui-group-theme-a">
+<li class="ui-first-child ui-last-child">
+<a href="#Pagina1" class="ui-btn ui-btn-icon-right ui-icon-carat-r">
+<h2>¿Que dia se celebra?</h2>
+</a>
+</li>
+<li class="ui-first-child ui-last-child">
+<a href="#Pagina2" class="ui-btn ui-btn-icon-right ui-icon-carat-r">
+<h2>La importancia del día de la tierra</h2>
+</a>
+</li>
+<li class="ui-first-child ui-last-child">
+<a href="#Pagina3" class="ui-btn ui-btn-icon-right ui-icon-carat-r">
+<h2>Cuidado del medio ambiente</h2>
+</a>
+</li>
+<li class="ui-first-child ui-last-child">
+<a href="#Pagina4" class="ui-btn ui-btn-icon-right ui-icon-carat-r">
+<h2>Cambio climático</h2>
+</a>
+</li>
+<li class="ui-first-child ui-last-child">
+<a href="#Pagina5" class="ui-btn ui-btn-icon-right ui-icon-carat-r">
+<h2>Contaminación</h2>
+</a>
+</li>
+<li class="ui-first-child ui-last-child">
+<a href="#Pagina6" class="ui-btn ui-btn-icon-right ui-icon-carat-r">
+<h2>El medio ambiente en mi comunidad</h2>
+</a>
+</li>
+</ul>
+</div>
+  <div data-role="footer" align="center" data-theme="a" data-position="fixed">
+  <div>
+  <h4>App 5</h4>
+  <h4>Luis Fernando Rugerio Herrera</h4>
+  </div>
+  </div>
+  </div>
+  
+  <div data-role="page" id="Pagina1" data-add-back-btn="true" data-theme="a">
+  <div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="a">
+  <h1>¿Que dia se celebra?</h1>
+ </div>
+  <div data-role="content">
+  <div>
+  <p>El Día de la Tierra es un día celebrado en muchos países el 22 de abril. Su promotor, el senador estadounidense Gaylord Nelson, instauró este día para crear una conciencia común a los problemas de la superpoblación, la producción de contaminación, la conservación de la biodiversidad y otras preocupaciones ambientales para proteger la Tierra. Es un día para rendir homenaje a nuestro planeta y reconocer a la Tierra como nuestro hogar y nuestra madre, así como lo han expresado distintas culturas a lo largo de la historia, demostrando la interdependencia entre sus ecosistemas y los seres vivos que la habitamos.</p>
+  <div>
+    <div align="center"><a href="#" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Image4','','imagenes/planeta11.png',1)"><img src="imagenes/planeta.png" width="352" height="517" id="Image4"></a> 
+    </div>
+  </div>
+  <p>Nuestro Planeta en Cifras la aprobación de leyes relacionadas con el aire limpio, el agua limpia y la conservación de especies en peligro de extinción. A partir de entonces, cada año en esta fecha, el mundo entero reflexiona y se moviliza por una Tierra mejor.</p>
+  <div data-role="collapsible" data-content-theme="false">
+<h1>Acuerdos Mundiales para salvar el planeta:</h1>
+<div>
+<p>La Comunidad Internacional reconoce este día la importancia de salvar el Planeta, a continuación algunos de los acuerdos mundiales para concebidos para ello:</p>
+<ul>
+<li>Convención para la protección de la Flora, de la Fauna y de las bellezas escénicas naturales de los países de América (Washington, 1941) persigue conservar las especies y géneros de la flora y fauna americana, para evitar su extinción.</li>
+<li>Convención sobre la Pesca y Conservación de los Recursos vivos de la Alta Mar.(1961), sobre la base de la cooperación internacional, mediante la acción de todos los Estados interesados, persigue regular la explotación de los recursos vivos de Alta Mar.</li>
+<li>Convención relativa a los Humedales de Importancia Internacional (RAMSAR, 1971) procura asegurar la conservación de los humedales, su flora y su fauna, armonizando las políticas nacionales previsoras mediante una acción internacional coordinada.</li>
+<li>Convención sobre Comercio Internacional de Especies Amenazadas (1977) se adoptan medidas encaminadas a proteger la flora y la fauna silvestre, mediante la cooperación internacional.</li>
+<li>Convención sobre la Prohibición de Desarrollo y Almacenamiento de Armas Bacteriológicas Tóxicas (1978) Con miras a lograr progresos efectivos hacia un desarme general y completo que incluya la prohibición y eliminación de todos los tipos de armas de destrucción en masa.</li>
+<li>Convención sobre el Comercio Internacional de Especies Amenazadas de Fauna y Flora Silvestre (1973/1979) Considerando la fauna y la flora como elementos irremplazables de los sistemas naturales de la tierra, se conviene en protegerlos de la explotación comercial, para las generaciones presentes y venideras.</li>
+<li>Convenio de Viena para la Protección de la Capa de Ozono (1985) Se decide proteger la salud humana y el ambiente de los efectos adversos resultantes de las modificaciones de la Capa de Ozono.</li>
+<li>Protocolo de Montreal Relativo a Sustancias Agotadoras de la Capa de Ozono (1987) Se adoptan medidas preventivas para controlar equitativamente el total de emisiones mundiales de las sustancias que la agotan, con el objetivo final de eliminarlas.</li>
+<li>Convenio de Basilea sobre el Control de los Movimientos Transfronterizos de los Desechos Peligrosos y su eliminación (1989) se decide proteger la salud humana y el ambiente contra los efectos nocivos que pueden derivarse de la generación y manejo de los desechos peligrosos y otros desechos.</li>
+<li>Convención para la protección del Patrimonio Mundial, Cultural y Natural (1990) Dispone establecer un Sistema eficaz de protección colectiva del patrimonio cultural y natural de valor excepcional.</li>
+<li>Convención Marco de las Naciones Unidas sobre Cambio Climático (1992) Establecer las concentraciones atmosféricas sobre gases de Efecto Invernadero, a niveles que impidan que las actividades humanas afecten peligrosamente el sistema climático mundial.</li>
+<li>Declaración de Río sobre Desarrollo y Medio Ambiente (1992) Se procura establecer una alianza mundial nueva y equitativa mediante la creación de nuevos niveles de cooperación entre los Estados, los sectores claves de la sociedad y las personas.</li>
+<li>Convención Internacional sobre la Diversidad Biológica (1994) mediante la utilización sostenible de los recursos biológicos y una participación justa y equitativa de los beneficios que se deriven de la utilización de los recursos genéticos, persigue conservar la Diversidad Biológica.</li>
+<li>Protocolo de Kioto (1997) Fue la Tercera Conferencia de las Partes de la Convención Marco de las Naciones Unidas sobre Cambio Climático, se espera un acuerdo entre las partes para el control de la emisión de gases que producen Efecto Invernadero y por tanto el Calentamiento de la Tierra. Venezuela no ha ratificado este acuerdo.</li>
+<li>Convención Internacional para la Lucha contra la Desertificación (1998) Establece un Marco para que los programas nacionales, subregionales y regionales combatan la degradación de las Tierras secas, que incluyen las praderas semiáridas y los desiertos.</li>
+</ul>
+<br>
+</div>
+  </div>
+  </div>
+  <div data-role="footer" data-theme="a" data-position="fixed">
+  <h4>Dia de la Tierra, FRH</h4>
+  </div>
+  </div>
+  </div>
+ 
+  <div data-role="page" id="Pagina2" data-add-back-btn="true" data-theme="a">
+  <div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="a">
+  <h1>La importancia del día de la tierra</h1>
+ </div>
+ <div data-role="content">
+ <div>
+ <div>
+ </div>
+ <p>Gaylord Nelson escogió la fecha de tal manera que se maximizara la participación en las universidades, ya que lo consideraba un encuentro entre maestros y alumnos. Determinó que la semana del 19 al 25 de abril era la mejor apuesta, ya que esta no coincidía con los exámenes o las vacaciones de primavera. Más aún, esta fecha no tenía ningún conflicto con celebraciones religiosas como la Pascua o el Pésaj, y era demasiado tarde en primavera para tener un clima decente. Más estudiantes preferirían estar en clase y habría menos competencia con otros eventos de media semana –así que eligió el miércoles 22 de abril. El día también coincidió con el aniversario del natalicio de John Muir, notable conservacionista.</p>
+ <a href="#" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Image7','','imagenes/planeta3.png',1)"><img src="imagenes/planeta12.png" width="500" height="335" id="Image7"></a>
+<p>Sin el conocimiento de Nelson, el 22 de abril de 1970 fue, por coincidencia, el centésimo aniversario del natalicio de Lenin, cuando se trasladó al calendario gregoriano, el cual fue adoptado por los rusos hasta 1918. La revista Time reportó que muchos no pensaron que la fecha fuera una coincidencia, sino una pista de que el evento fue un “engaño comunista”, y citaron a un miembro de Daughters of the American Revolution, diciendo: “elementos subversivos planean hacer que los niños americanos vivan en un ambiente que sea bueno para ellos”. John Edgar Hoover, director del Buró Federal de Investigaciones, pudo haber creado la intriga de la conexión con Lenin, ya que se presumía que el FBI llevaba a cabo tareas de vigilancia en las manifestaciones de 1970. La idea de que la fecha fuera escogida para celebrar el centenario de Lenin, aún persiste en algunos cuarteles.</p>
+ <h3 align="center">Documental del Planeta Tierra</h3>
+ <div>
+ <iframe width="560" height="315" src="https://www.youtube.com/embed/4YQfjo-JpXQ" frameborder="0" allowfullscreen></iframe>
+ </div>
+ </div>
+ </div>
+ <div data-role="footer" data-theme="a" data-position="fixed">
+ <h4>Dia de la Tierra, FRH</h4>
+ </div>
+ </div>
+ </div>
+
+ <div data-role="page" id="Pagina3" data-add-back-btn="true" data-theme="a">
+ <div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="a">
+ <h1>Cuidado del medio ambiente</h1>
+ </div>
+ <div data-role="content">
+ <div>
+ <p>El medio ambiente está formado por el conjunto de elementos abióticos (energía solar, suelo, agua y aire) y bióticos (organismos vivos) que integran la delgada capa de la Tierra llamada biosfera, sustento y hogar de los seres vivos.</p>
+ <p>Las alteraciones graves pueden modificar las condiciones de vida del planeta y poner en peligro la vida en la Tierra. En la última década, el incremento del número de seres humanos sobre este planeta y el uso que se hace de las nuevas tecnologías, está causando importantes cambios en nuestro medio. Esto se debe al continuo incremento en la explotación de los recursos, que, sobrepasado un límite, pierden su capacidad de regenerarse correctamente.</p>
+ <div align="center"><img src="imagenes/planeta13.png" width="213" height="318">
+ </div>
+ <h3 align="center">LOS PRINCIPALES PROBLEMAS GLOBALES DEL MEDIO AMBIENTE</h3>
+ <p>Entre los problemas más representativos, y a su vez más perjudiciales, podemos destacar:</p>
+  <ul>
+ <li>El cambio climático.</li>
+ <li>El efecto invernadero.</li>
+ <li>El agujero de la capa de ozono.</li> 
+ <li>La acidificación del suelo y el agua.</li> 
+ <li>La contaminación de las aguas.</li> 
+ <li>La contaminación de los suelos.</li> 
+ <li>Los residuos urbanos. </li>
+ <li>Los residuos industriales. </li>
+ <li>Los residuos sanitarios. </li>
+ <li>Los residuos agrícolas y ganaderos.</li> 
+ <li>El deterioro del medio natural. </li>
+ <li>La pérdida de la biodiversidad en el mundo.</li> 
+ <li>El agotamiento y contaminación de los recursos hídricos. </li>
+ <li>La deforestación y desertificación.</li> 
+ </ul>
+ <div data-role="collapsible" data-content-theme="false">
+<h1>Las 3R</h1>
+<div>
+<p>La regla de las tres erres, también conocida como las tres erres de la ecología o simplemente 3R, es una propuesta sobre hábitos de consumo, popularizada por la organización ecologista Greenpeace, que pretende desarrollar hábitos como el consumo responsable. Este concepto hace referencia a estrategias para el manejo de residuos que buscan ser más sustentables con el medio ambiente y específicamente dar prioridad a la reducción en el volumen de residuos generados.</p>
+ <div> 
+   <div align="center"><a href="#" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Image5','','imagenes/r.png',1)"><img src="imagenes/proyecto.png" width="497" height="234" id="Image5"></a></div>
+ </div>
+<P>Las tres erres (3R), en orden de importancia bioecológica son:</p>
+<h2 align="center">Reducir</h2>
+<P>Si reducimos el problema, disminuimos el impacto en el medio ambiente. Los problemas de concienciación, habría que solucionarlos empezando por esta erre. La reducción puede realizarse en 2 niveles: reducción del consumo de bienes o de energía. De hecho, actualmente la producción de energía produce numerosos desechos (desechos nucleares, dióxido de carbono...). El objetivo sería:</P>
+<ul>
+<li>Reducir o eliminar la cantidad de materiales destinados a un uso único (por ejemplo, los embalajes).</li>
+<li>Adaptar los aparatos en función de sus necesidades (por ejemplo poner lavadoras y lavavajillas llenos y no a media carga).</li>
+<li>Reducir pérdidas energéticas o de recursos: de agua, desconexión de aparatos eléctricos en stand by, conducción eficiente, desconectar transformadores, etc.</li>
+</ul>
+<h2 align="center">Reutilizar</h2>
+<P>Segunda erre más importante, igualmente debido a que también reduce impacto en el medio ambiente, indirectamente. Ésta se basa en reutilizar un objeto para darle una segunda vida útil. Todos los materiales o bienes pueden tener más de una vida útil, bien sea reparándolos para un mismo uso o con imaginación para un uso diferente.</P>
+<P>Las botellas desechables se pueden convertir en ladrillos ecológicos, si en su interior se les ponen todas las bolsas de plástico que ya no se usan. Las cajitas o frascos de PVC, metal o plástico se pueden pintar o decorar con técnicas de decoupage y utilizarse nuevamente ahora para guardar distintos elementos. El papel usado se puede transformar en pulpa y crear nuevas hojas para escribir.</P>
+<h2 align="center">Reciclar</h2>
+<P>Esta es una de las erres más populares debido a que el sistema de consumo actual ha preferido usar envases de materiales reciclables (plásticos y bricks, sobre todo), pero no biodegradables. De esta forma se necesita el empleo en mayor forma personal y energía en el proceso.</P>
+</div>
+</div>
+ </div>
+ </div>
+ <div data-role="footer" data-theme="a" data-position="fixed">
+ <h4>Dia de la Tierra, FRH</h4>
+ </div>
+ </div>
+</div>
+
+ <div data-role="page" id="Pagina5" data-add-back-btn="true" data-theme="a">
+ <div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="a">
+ <h1>Contaminación</h1>
+ </div>
+ <div data-role="content">
+ <div>
+ <p>La Contaminación se denomina a la presencia en el ambiente de cualquier agente químico, físico o biológico nocivos para la salud o el bienestar de la población, de la vida animal o vegetal.</p>
+ <p>Esta degradación del medio ambiente por un contaminante externo puede provocar daños en la vida cotidiana del ser humano y alterar las condiciones de supervivencia de la flora y la fauna.</p>
+ <div>
+   <div align="center"><a href="#" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Image5','','imagenes/planeta10.png',1)"><img src="imagenes/planeta8.png" width="399" height="387" id="Image5"></a></div>
+ </div>
+ <p>Alrededor de 2 millones de personas podrían morir cada año por alguna causa atribuible a la contaminación atmosférica, asegura la Organización Mundial de la Salud. Según este estudio la mayor cantidad de muertes se producen en los países en desarrollo donde se concentran  altas densidades de partículas nocivas para la salud.</p>
+ <p>La población humana crece según una progresión geométrica y la demanda de alimentos y necesidades básicas para la vida del hombre son cada vez mayores. El aumento en el consumo de diversos productos y desechos, provocados por  el ser humano, trae como consecuencia la generación de sustancias tóxicas.</p>
+ <p>Este desarrollo indiscriminado ha alterado la Tierra:</p>
+ <ul>
+<li>Regiones enteras en zonas tropicales han sufrido la desertificación.</li>
+<li>Extinción de especies animales y vegetales.</li>
+<li>Graves inundaciones que arruinan cada año las cosechas de las zonas más pobres del planeta.</li>
+</ul>
+<p>La contaminación es cualquier tipo de daño permanente que se haga al medio ambiente. No sólo existe la contaminación ambiental.</p>
+<p>Los tipos de contaminación:</p>
+<ul>
+<li>Contaminación del agua.</li>
+<li>Contaminación del aire.</li>
+<li>Contaminación del suelo.</li>
+<li>Contaminación sonora.</li>
+<li>Contaminación térmica.</li>
+<li>Contaminación ambiental.</li>
+<li>Contaminación lumínica.</li>
+<li>Contaminación radiactiva.</li>
+<li>Contaminación de la capa de ozono.</li>
+<li>Contaminación por petróleo.</li>
+<li>Contaminación por plomo.</li>
+</ul>
+<div data-role="collapsible" data-content-theme="false">
+<h1>Diferentes tipos de contaminantes</h1>
+<div>
+<ul>
+<li><strong>Sólidos:</strong> la basura como por ejemplo los restos de materia orgánica y envases.</li>
+<li><strong>Líquidos:</strong> las llamadas aguas negras con desechos industriales y  derrames de combustibles como el petróleo.</li>
+<li><strong>Gaseosos:</strong> resultantes de quemar combustibles fósiles y derivados del petróleo.</li>
+<li><strong>No degradables: </strong>estos contaminantes no se descomponen por procesos naturales. Ejemplos de ellos son el plomo y el mercurio. Se debe evitar arrojarlos al medio ambiente porque cuando  ya han contaminado es muy costoso o imposible eliminarlos.</li>
+<li><strong>Degradación lenta:</strong> estos necesitan décadas o más tiempo para degradarse. Ejemplo de ellos son los plásticos y el DDT utilizado en insecticidas.</li>
+<li><strong>Degradables:</strong> se descomponen completamente o se reducen a niveles aceptables mediante proceso naturales físicos, químicos y biológicos.</li>
+<li><strong>Biodegradables:</strong> son los contaminantes químicos complejos que por la acción de organismos vivos, se descomponen en compuestos químicos más sencillos.</li> 
+</ul>
+</div>
+</div>
+ </div>
+ <div data-role="footer" data-theme="a" data-position="fixed">
+ <h4>Dia de la Tierra, FRH</h4>
+ </div>
+ </div>
+ </div>
+
+<div data-role="page" id="Pagina6" data-add-back-btn="true" data-theme="a">
+ <div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="a">
+ <h1>El medio ambiente en mi comunidad</h1>
+ </div>
+ <div data-role="content">
+ <div>
+ <p>En mi comunidad donde vivo hay contaminacion ambiental ya que tiran basura en los terrenos baldíos y graffitean.</p>
+ <p>Yo como puedo colaborar para que no tiren la basura, hablar con mi comunidad y apoyarnos para que no tiren mas basura y recoger la basura que este tirada.</p>
+ <p>Y los graffitis pues llamar a la policia y los sancionen.</p>
+<!-- Start WOWSlider.com -->
+<iframe src="visor/indexvisor1.html" style="width:95%;height:56%;max-width:100%;overflow:hidden;border:none;padding:0;margin:0 auto;display:block;" marginheight="0" marginwidth="0"></iframe>
+<!-- End WOWSlider.com -->
+ </div>
+ <div data-role="footer" data-theme="a" data-position="fixed">
+ <h4>Dia de la Tierra, FRH</h4>
+ </div>
+ </div>
+ </div>
+ 
+<div data-role="page" id="Pagina4" data-add-back-btn="true" data-theme="a">
+ <div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="a">
+ <h1>Cambio climático</h1>
+ </div>
+ <div data-role="content">
+ <div>
+ <p>El cambio climático es un cambio en la distribución estadística de los patrones meteorológicos durante un periodo prolongado de tiempo (décadas a millones de años). Puede referirse a un cambio en las condiciones promedio del tiempo o en la variación temporal meteorológica de las condiciones promedio a largo plazo (más o menos fenómenos meteorológicos extremos). Está causado por factores como procesos bióticos, variaciones en la radiación solar recibida por la Tierra, tectónica de placas y erupciones volcánicas. También se han identificado ciertas actividades humanas como causas significativas del cambio de clima reciente, a menudo llamado calentamiento global.</p>
+ <div align="center"><a href="#" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Image6','','imagenes/1280.png',1)"><img src="imagenes/planeta2.png" width="304" height="304" id="Image6"></a>
+ </div>
+ <p>Uno de los problemas que nos amenaza hoy en día a todos los seres humanos del Planeta, es el fenómeno del Cambio Climático Global. Las actividades humanas y nuestro sistema económico (y manera de vivir) estamos produciendo más y más gases que están impactando la atmósfera. Esto está causando que la temperatura promedio del planeta suba teniendo consecuencias desastrosas.</p>
+<div data-role="collapsible" data-content-theme="false">
+<h1>Causas y Consecuencias del cambio climático</h1>
+<div>
+<h2>Causas</h2>
+<p>Las variaciones climáticas han existido desde los orígenes de la Tierra. Nuestra pequeña morada ha asistido durante su larga vida a periodos de glaciaciones, actividad sísmica continuada o fuertes radiaciones solares.</p>
+<p>Sin embargo, hoy en día asistimos a un cambio climático global sin precedentes, donde las causas naturales parecen jugar un papel poco importante. La comunidad científica coincide en que las fluctuaciones del clima son provocadas en gran medida por el hombre. Actividades como la tala indiscriminada de árboles, el mal uso del agua potable, la sobreexplotación de las tierras se conjugan para alimentar un fenómeno que no hace sino acrecentarse. De entre todos los factores, la emisión de gases por parte de los países industrializados es probablemente uno de los que más agravan la situación, provocando un calentamiento global mundial que ya acarrea trágicos resultados.</p>
+<h2>Consecuencias</h2>
+<p>El impacto del cambio climático está ocurriendo aquí y ahora.  Entre sus principales consecuencias observamos:</p>
+<ul>
+<li>Fusión de los casquetes polares, con el consecuente aumento del nivel del mar.</li>
+<li>Climatología extrema.</li>
+<li>Desaparición de especies de animales y plantas.</li>
+<li>Aumento masivo y desproporcionado de fenómenos naturales como ciclones, huracanes, desbordamientos de ríos, etc.</li>
+<li>Vulnerabilidad de los países empobrecidos.</li>
+</ul>
+</div>
+</div>
+ </div>
+ <div data-role="footer" data-theme="a" data-position="fixed">
+ <h4>Dia de la Tierra, FRH</h4>
+ </div>
+ </div>
+ </div>
+</body>
+</html>
